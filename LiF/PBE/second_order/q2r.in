@@ -1,0 +1,5 @@
+  &input
+  fildyn = 'LiF.dyn'
+  zasr = 'crystal'
+  flfrc = 'espresso.ifc2'
+/
