@@ -1,0 +1,10 @@
+phonon calculation.
+&inputph
+  prefix = 'NaH',
+  tr2_ph = 1.0d-14
+  ldisp = .true.  
+  epsil = .true.
+  recover=.true.
+  nq1 = 4, nq2 = 4, nq3 = 4
+  fildyn = 'NaH.dyn'
+/
