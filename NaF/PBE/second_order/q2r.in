@@ -1,0 +1,5 @@
+  &input
+  fildyn = 'NaF.dyn'
+  zasr = 'crystal'
+  flfrc = 'espresso.ifc2'
+/
