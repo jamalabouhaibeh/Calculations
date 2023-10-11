@@ -1,0 +1,10 @@
+phonon calculation.
+&inputph
+  prefix = 'MoSe2'
+  tr2_ph = 1.0d-22
+  ldisp = .true.  
+  recover=.true.
+  epsil=.true.
+  nq1 = 6, nq2 = 6, nq3 = 1
+  fildyn = 'MoSe2.dyn'
+/
