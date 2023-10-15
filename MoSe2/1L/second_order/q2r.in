@@ -1,5 +1,0 @@
-  &input
-  fildyn = 'MoSe2.dyn'
-  zasr = 'simple'
-  flfrc = 'espresso.ifc2'
-/
