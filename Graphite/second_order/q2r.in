@@ -1,0 +1,5 @@
+  &input
+  fildyn = 'graphite.dyn'
+  zasr = 'crystal'
+  flfrc = 'espresso.ifc2'
+/

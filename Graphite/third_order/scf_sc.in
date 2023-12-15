@@ -1,0 +1,26 @@
+&CONTROL
+  calculation = 'scf'
+  outdir = 'tmp_##NUMBER##'
+  prefix = 'graphite'
+  pseudo_dir = './'
+  tprnfor = .true.
+  tstress = .true.
+/
+&SYSTEM
+  ecutwfc = 90
+  ibrav = 0
+  nat = ##NATOMS##
+  ntyp = 1
+  occupations = 'fixed'
+  smearing = 'methfessel-paxton'
+/
+&ELECTRONS
+  conv_thr = 1.0000000000d-16
+  mixing_beta = 0.3
+/
+ATOMIC_SPECIES
+C 12.0107 C.upf
+##COORDINATES## 
+K_POINTS gamma
+##CELL##
+```

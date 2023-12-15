@@ -1,0 +1,27 @@
+&CONTROL
+  calculation = 'scf'
+  outdir = 'tmp_##NUMBER##'
+  prefix = 'graphene'
+  pseudo_dir = './'
+  tprnfor = .true.
+  tstress = .true.
+/
+&SYSTEM
+  ecutwfc = 120
+  ibrav = 0
+  nat = ##NATOMS##
+  ntyp = 1
+  occupations = 'smearing'
+  degauss = 0.0001 
+  smearing = 'marzari-vanderbilt'
+/
+&ELECTRONS
+  conv_thr = 1.0000000000d-16
+  mixing_beta = 0.3
+/
+ATOMIC_SPECIES
+C 12.0107 C.upf
+##COORDINATES## 
+K_POINTS gamma
+##CELL##
+```
