@@ -1,0 +1,24 @@
+&CONTROL
+  calculation = 'scf'
+  outdir = 'tmp_##NUMBER##'
+  prefix = 'KH'
+  pseudo_dir = './'
+  tprnfor = .true.
+  tstress = .true.
+/
+&SYSTEM
+  ecutwfc = 100
+  ibrav = 0
+  nat = ##NATOMS##
+  ntyp = 2
+/
+&ELECTRONS
+  conv_thr =   1.0000000000d-16
+/
+ATOMIC_SPECIES
+H     1.00794      h_pbesol_v1.4.uspp.F.UPF
+K     39.0983      k_pbesol_v1.4.uspp.F.UPF      
+##COORDINATES## 
+K_POINTS gamma
+##CELL##
+```

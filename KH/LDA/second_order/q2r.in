@@ -1,0 +1,5 @@
+  &input
+  fildyn = 'KH.dyn'
+  zasr = 'crystal'
+  flfrc = 'espresso.ifc2'
+/
