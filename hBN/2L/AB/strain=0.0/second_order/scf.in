@@ -1,0 +1,35 @@
+&CONTROL
+  calculation = 'scf'
+  outdir = './'
+  prefix = 'hBN'
+  pseudo_dir = './'
+  tprnfor = .true.
+  tstress = .true.
+/
+&SYSTEM
+  ecutwfc = 120
+  ibrav = 4
+  a = 2.50405447
+  c = 20
+  nat = 4
+  ntyp = 2
+  occupations = 'fixed'
+  smearing = 'marzari-vanderbilt'
+  input_dft = 'vdw-df'	
+/
+&ELECTRONS
+  conv_thr =   1.0000000000d-16
+  mixing_beta = 0.3
+/
+ATOMIC_SPECIES
+B    10.811   B.upf
+N    14.0067  N.upf
+
+ATOMIC_POSITIONS (crystal)
+B             0.0000000000        0.0000000000        0.4100138301
+B             0.0000000000        0.0000000000        0.5899861699
+N             0.3333333300        0.6666666700        0.4100574313
+N             0.6666666700        0.3333333300        0.5899425687
+
+K_POINTS automatic
+20 20 1 0 0 0

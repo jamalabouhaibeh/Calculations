@@ -1,0 +1,5 @@
+  &input
+  fildyn = 'hbn.dyn'
+  zasr = 'crystal'
+  flfrc = 'mat2R'
+/
