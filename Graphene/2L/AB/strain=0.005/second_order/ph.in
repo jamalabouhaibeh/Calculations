@@ -1,0 +1,9 @@
+phonon calculation.
+&inputph
+  prefix = 'graphene',
+  tr2_ph = 1.0d-18
+  ldisp = .true.  
+  recover=.true.
+  nq1 = 8, nq2 = 8, nq3 = 1
+  fildyn = 'graphene.dyn'
+/
