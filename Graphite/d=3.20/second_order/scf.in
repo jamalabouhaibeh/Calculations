@@ -1,0 +1,33 @@
+&CONTROL
+  calculation = 'scf'
+  outdir = './'
+  prefix = 'graphite'
+  pseudo_dir = './'
+  tprnfor = .true.
+  tstress = .true.
+/
+&SYSTEM
+  ecutwfc = 90
+  ibrav = 4
+  a= 2.4456759446
+  c= 6.3961938211
+  nat = 4
+  ntyp = 1
+  occupations = 'fixed'
+  smearing = 'methfessel-paxton'
+/
+&ELECTRONS
+  conv_thr =   1.0000000000d-16
+  mixing_beta=0.3
+/
+ATOMIC_SPECIES
+C 12.0107 C.upf
+
+ATOMIC_POSITIONS (crystal)
+C             0.0000000000        0.0000000000        0.2500000000
+C             0.0000000000        0.0000000000        0.7500000000
+C             0.3333333300        0.6666666700        0.2500000000
+C             0.6666666700        0.3333333300        0.7500000000
+
+K_POINTS automatic
+16 16 6 0 0 0

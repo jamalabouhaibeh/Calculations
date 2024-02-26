@@ -1,0 +1,9 @@
+phonon calculation.
+&inputph
+  prefix = 'graphite'
+  tr2_ph = 1.0d-18
+  ldisp = .true.  
+  recover=.true.
+  nq1 = 5, nq2 = 5, nq3 = 2
+  fildyn = 'graphite.dyn'
+/
