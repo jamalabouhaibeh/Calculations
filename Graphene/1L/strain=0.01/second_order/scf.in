@@ -1,0 +1,31 @@
+&control
+  calculation='scf',
+  prefix='graphene',
+  pseudo_dir = './',
+  outdir='./',
+  tprnfor = .true.
+  tstress = .true.
+/
+&system
+  ecutwfc = 120
+  ibrav = 4
+  celldm(1)= 4.67309378079
+  celldm(3)= 9.999947309
+  nat = 2
+  ntyp = 1
+  occupations = 'smearing'
+  degauss = 0.0001 
+  smearing = 'marzari-vanderbilt'
+/
+&electrons
+  conv_thr = 1.0000000000d-16
+  mixing_beta = 0.3
+/
+ATOMIC_SPECIES
+C 12.0107 C.upf
+
+ATOMIC_POSITIONS crystal
+C 0.000000000 0.000000000 0.250000000
+C 0.333333333 0.666666667 0.250000000
+K_POINTS automatic
+16 16 1 0 0 0
