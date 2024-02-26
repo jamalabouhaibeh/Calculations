@@ -1,0 +1,27 @@
+&allocations
+        nelements=2,
+        natoms=2,
+        ngrid(:)=70 70 1,
+        norientations=0
+&end
+&crystal
+        lfactor= 0.25125828976,
+	lattvec(:,1)= 1.000000   0.000000   0.000000,
+	lattvec(:,2)=-0.500000   0.866025   0.000000,
+	lattvec(:,3)= 0.000000   0.000000   9.999964,
+	elements="B" "N"
+        types=1,2
+	positions(:,1)=0.000000000 0.000000000 0.250000000,
+	positions(:,2)=0.333333333 0.666666667 0.250000000,
+        scell(:)=8 8 1
+&end
+&parameters
+        T = 300
+	scalebroad=1.1
+        maxiter= 100000
+&end
+&flags
+	espresso=.true.
+        isotopes=.false.
+&end
+
