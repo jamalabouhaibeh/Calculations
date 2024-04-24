@@ -1,0 +1,10 @@
+phonon calculation.
+&inputph
+  prefix = 'NaCl',
+  tr2_ph = 1.0d-14
+  ldisp = .true.  
+  epsil = .true.
+  recover=.true.
+  nq1 = 8, nq2 = 8, nq3 = 8
+  fildyn = 'NaCl.dyn'
+/

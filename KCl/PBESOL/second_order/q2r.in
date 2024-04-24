@@ -1,0 +1,5 @@
+  &input
+  fildyn = 'KCl.dyn'
+  zasr = 'crystal'
+  flfrc = 'espresso.ifc2'
+/

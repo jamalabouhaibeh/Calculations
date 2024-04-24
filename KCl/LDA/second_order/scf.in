@@ -1,0 +1,26 @@
+&CONTROL
+  calculation = 'scf'
+  outdir = './'
+  prefix = 'KCl'
+  pseudo_dir = './'
+  tprnfor = .true.
+  tstress = .true.
+/
+&SYSTEM
+  ecutwfc = 100
+  ibrav = 2
+  celldm(1) = 11.4769657663
+  nat = 2
+  ntyp = 2
+/
+&ELECTRONS
+  conv_thr =   1.0000000000d-16
+/
+ATOMIC_SPECIES
+K      39.0983       k_lda_v1.4.uspp.F.UPF
+Cl     35.453        cl_lda_v1.4.uspp.F.UPF
+ATOMIC_POSITIONS crystal
+K      0.0000000000       0.0000000000       0.0000000000 
+Cl     0.5000000000       0.5000000000       0.5000000000 
+K_POINTS automatic
+14 14 14 0 0 0
