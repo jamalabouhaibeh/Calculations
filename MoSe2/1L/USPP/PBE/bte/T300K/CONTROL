@@ -1,0 +1,30 @@
+&allocations
+        nelements=2,
+        natoms=3,
+        ngrid(:)=80 80 1,
+        norientations=0
+&end
+&crystal
+        lfactor=  0.3318370676,
+	lattvec(:,1)= 1.000000   0.000000   0.000000
+	lattvec(:,2)=-0.500000   0.866025   0.000000,
+	lattvec(:,3)= 0.000000   0.000000   6.162988,
+	elements="Mo" "Se"
+        types=1,2,2
+	positions(:,1)=0.3333333300        0.6666666700        0.2500000000,
+	positions(:,2)=0.6666666700        0.3333333300        0.3316040836,
+	positions(:,3)=0.6666666700        0.3333333300        0.1683959164,
+        scell(:)=8 8 1
+
+
+&end
+&parameters
+        T = 300
+	scalebroad=1.0
+        maxiter= 100000
+&end
+&flags
+	espresso=.true.
+        isotopes=.false.
+&end
+
