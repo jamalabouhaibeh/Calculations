@@ -1,0 +1,35 @@
+&CONTROL
+  calculation = 'scf'
+  prefix = 'MoS2'
+  pseudo_dir = './'
+  tprnfor = .true.
+  tstress = .true.
+/
+&SYSTEM
+  ecutwfc =   100
+  ibrav = 0
+  nat = 6
+  ntyp = 2
+  occupations = 'fixed'
+  smearing = 'cold'
+  degauss     =  1.00000e-02
+/
+&ELECTRONS
+  conv_thr =   1.0d-14
+/
+ATOMIC_SPECIES
+Mo     95.95 Mo.upf
+S      32.065 S.upf
+ATOMIC_POSITIONS (crystal)
+Mo            0.6666666700        0.3333333300        0.2500000000
+Mo            0.3333333300        0.6666666700        0.7500000000
+S             0.6666666700        0.3333333300        0.6262201332
+S             0.3333333300        0.6666666700        0.3737798668
+S             0.6666666700        0.3333333300        0.8737798668
+S             0.3333333300        0.6666666700        0.1262201332
+K_POINTS automatic
+16 16 16 0 0 0
+CELL_PARAMETERS (angstrom)
+   3.142664524   0.000000000   0.000000000
+  -1.571332262   2.721627314   0.000000000
+   0.000000000   0.000000000  12.598063667
