@@ -1,0 +1,35 @@
+&CONTROL
+  calculation = 'scf'
+  prefix = 'MoSe2'
+  pseudo_dir = './'
+  tprnfor = .true.
+  tstress = .true.
+/
+&SYSTEM
+  ecutwfc =   100
+  ibrav = 0
+  nat = 6
+  ntyp = 2
+  occupations = 'fixed'
+  smearing = 'cold'
+  degauss     =  1.00000e-02
+/
+&ELECTRONS
+  conv_thr =   1.0d-14
+/
+ATOMIC_SPECIES
+Mo     95.95 Mo_ONCV_PBE-1.0.oncvpsp.upf
+Se     78.96 Se_pbe_v1.uspp.F.UPF
+ATOMIC_POSITIONS (crystal)
+Mo            0.6666666700        0.3333333300        0.7500000000
+Mo            0.3333333300        0.6666666700        0.2500000000
+Se            0.3333333300        0.6666666700        0.8608912793
+Se            0.6666666700        0.3333333300        0.3608912793
+Se            0.3333333300        0.6666666700        0.6391087207
+Se            0.6666666700        0.3333333300        0.1391087207
+K_POINTS automatic
+16 16 16 0 0 0
+CELL_PARAMETERS (angstrom)
+   3.319403667   0.000000000   0.000000000
+  -1.659701833   2.874687901   0.000000000
+   0.000000000   0.000000000  15.051693951
